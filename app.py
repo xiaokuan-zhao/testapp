@@ -17,6 +17,7 @@ app.layout = html.Div([
         dcc.Input(id = 'benchmark-id', type = 'text', value="IVV"),
         html.Label("Asset:"),
         dcc.Input(id = 'asset-id', type = 'text', value="AAPL.O"),
+        html.Label("Date Range:"),
         dcc.DatePickerRange(
             id='my-date-picker-range',
             month_format='MMM Do, YY',
