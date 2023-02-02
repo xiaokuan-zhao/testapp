@@ -17,7 +17,7 @@ app.layout = html.Div([
         dcc.Input(id = 'benchmark-id', type = 'text', value="IVV"),
         html.Label("Asset:"),
         dcc.Input(id = 'asset-id', type = 'text', value="AAPL.O"),
-        html.Label("Date Range:"),
+        html.Label("Date Range: "),
         dcc.DatePickerRange(
             id='my-date-picker-range',
             month_format='MMM Do, YY',
@@ -234,7 +234,6 @@ def render_ab_plot(benchmark_id, asset_id, n_clicks, start_date, end_date):
     for i in outcome:
         y.append(i["AAPL.O"])
         x.append(i["IVV"])
-    print(outcome)
     # Add a constant to your independent variable
     x = sm.add_constant(x)
 
