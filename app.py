@@ -258,7 +258,7 @@ def render_ab_plot(benchmark_id, asset_id, n_clicks, start_date, end_date):
 )
 def printline(ab_plot):
     stri = ''
-    stri = stri + 'The slope of the ols is' + str(round(slope,2)) + ', and the intercept of the ols is ' + str(round(intercept,2))
+    stri = stri + 'The Beta of the ols is' + str(slope) + ', and the Alpha of the ols is ' + str(intercept)
     return stri
 
 if __name__ == '__main__':
