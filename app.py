@@ -257,9 +257,9 @@ def render_ab_plot(benchmark_id, asset_id, n_clicks, start_date, end_date):
     prevent_initial_call=True
 )
 def printline(ab_plot):
-    str = ''
-    str = str + 'The slope of the ols is' + str(round(slope,2)) + ', and the intercept of the ols is' + str(round(intercept,2))
-    return str
+    stri = ''
+    stri = stri + 'The slope of the ols is' + str(round(slope,2)) + ', and the intercept of the ols is ' + str(round(intercept,2))
+    return stri
 
 if __name__ == '__main__':
     app.run_server(debug=True)
